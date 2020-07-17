@@ -13,8 +13,8 @@
         </ion-toolbar>
     </ion-header>
 
-    <ion-card class="Questioncard">
-        <ion-card-subtitle> What is stressing you out?</ion-card-subtitle>
+    <ion-card class="Questioncard1">
+        <ion-card-subtitle class="Question1"> What is stressing you out?</ion-card-subtitle>
         <ion-card class="Answercard">
             <ion-input type="text" text-right id="input" [(ngModel)]="inputValue1"> Answer: </ion-input>
         </ion-card>
@@ -22,8 +22,8 @@
 
 
 
-    <ion-card class="Questioncard">
-        <ion-card-subtitle> What can I change in your class to help?</ion-card-subtitle>
+    <ion-card class="Questioncard2">
+        <ion-card-subtitle class="Question1"> What can I change in your class to help?</ion-card-subtitle>
         <ion-card class="Answercard">
             <ion-input type="text" text-right id="input" [(ngModel)]="inputValue2"> Answer: </ion-input>
         </ion-card>
@@ -32,7 +32,7 @@
 
     <ion-button (click)="someFunction()"> Send </ion-button>
 
-    <p>
+    <p >
         You sent: {{printing.printvalue1}}{{printing.printvalue2}}
     </p>
 
